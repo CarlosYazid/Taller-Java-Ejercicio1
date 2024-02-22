@@ -2,7 +2,7 @@ package compras;
 
 public class Producto {
 
-    public int codigo; //Notificar a esta gente /*Se supone que esta es una constante, pero crearon un funcion para cambiarla*/
+    public int codigo; //Notificar /*Se supone que esta es una constante, pero crearon un funcion para cambiarla*/
     public String nombre;
     public String tipo;
     public static int totalProductosPedidos;
@@ -26,6 +26,6 @@ public class Producto {
     }
 
     public static int getTotalProductosPedidos() {/*El metodo se llamaba desde clase pero este metodo es de instacia*/
-        return totalProductosPedidos;//Notificar a esta gente
+        return totalProductosPedidos;//Notificar
     }
 }
