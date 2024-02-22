@@ -28,9 +28,10 @@ public class OrdenCompra {
         }
     }
     public void retirarProducto(Empleado empleado, Producto producto) {
-        if (empleado.tengoPermiso()) {//Elimine el !
-            retirarProducto(producto);//Notificar a esta gente /*Esta linea se supone que deberia estar afuera del condicional if , pero permite que otros empleados tengan permisos*/
+        if (!empleado.tengoPermiso()) {
+            return;
         }
+        retirarProducto(producto);
     }
 
     private void retirarProducto(Producto producto) {
